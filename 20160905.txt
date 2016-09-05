@@ -1,0 +1,61 @@
+主邮箱：yangbia0@sina.com
+次邮箱：ybiao_love@sina.com
+
+
+基本的linux命令
+	linux				操作系统
+		清屏			clear
+		退出			exit
+		切换磁盘		cd 盘符：
+		切换目录		cd 路径
+		查看文件列表	ls
+		查看文件内容	cat
+		修改文件内容	vi
+				输入	i
+				退出编辑	按下键盘Esc
+				保存	:wq!  回车
+				不保存	:q	回车
+		www.github.com
+			创建github帐号
+				输入  ：
+						用户名
+						主邮箱
+						密码	字母加数字八位以上
+			配置邮箱
+				点击头像旁边的箭头
+						选择settings
+				点击Emails
+						登录主邮箱	  收到邮件  激活
+						添加次邮箱
+							Add email address
+						登录次邮箱		激活
+			生成密钥
+				点击头像旁边的箭头
+						选择settings
+					点击 SSH and GPG keys
+
+				打开Git Bash  命令行
+					输入
+							ssh-key -t rsa -C “主邮箱”
+							一路回车 密钥生成
+							用户目录有一个.ssh文件夹
+									两个文件id_rsa /id_rsa.pub
+										不能使用任何编辑器打开,只能使用记事本打开
+									复制id_rsa.pub里面的内容
+					点击New SSH Keys
+						填写title 不要使用中文和标点！
+						将复制的内容粘贴到key中
+						点击Add
+				配置Git Bash命令行
+						查看配置
+							git config -l
+						配置name和email
+							配置name
+								git config --global user.name "名字"
+							配置email
+								git config --global user.email "主邮箱"
+						验证是否成功
+								git config -l
+									如果找到name和email就成功了
+									
+
